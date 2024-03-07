@@ -26,7 +26,7 @@ jobs:
         pip install -r requirements.txt
     - name: Test with pytest
       run: |
-        pytest
+        python -m pytest
     - name: Create database
       run: python db.py -d
     - name: Run additional deployment steps
